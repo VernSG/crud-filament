@@ -30,6 +30,8 @@ php artisan make:model Player -m
 
 # CHANGE SCHEMA PLAYERS
 
+database/migrations
+
 ```
  Schema::create('players', function (Blueprint $table) {
             $table->id();
@@ -41,6 +43,8 @@ php artisan make:model Player -m
 ```
 
 # PROTECTED MODEL PLAYER
+
+models/players
 
 ```
 <?php
@@ -69,6 +73,8 @@ php artisan make:filament-resource PlayerResource
 
 # REQUIRE SCHEMA FOR ADD NEW PLAYERS
 
+app/filament/resources/playerresources.php
+
 ```
 return $form
             ->schema([
@@ -88,6 +94,7 @@ return $form
 
 # REQUIRE SCHEMA TABLE FOR SHOW TABLE PLAYERS
 
+at app/filament/resources/playerresources.php.
 im add sortable and searchable for get the search input and sorting
 
 ```
@@ -115,6 +122,7 @@ im add sortable and searchable for get the search input and sorting
 
 # EDIT TABLE FOR UNIQUE COLUMN
 
+at app/filament/resources/playerresources.php.
 Im add unique ignorable record from nim if duplicate
 
 ```
