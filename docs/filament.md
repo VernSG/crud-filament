@@ -1,3 +1,32 @@
+# INSTALL LARAVEL
+
+```
+composer create-project laravel/laravel example-app
+```
+
+# SETUP DATABASE
+
+```
+DB_CONNECTION=sqlite
+# DB_HOST=127.0.0.1
+# DB_PORT=3306
+DB_DATABASE=/home/yusuf/Documents/crud/database/database.sqlite
+# DB_USERNAME=root
+# DB_PASSWORD=
+```
+
+# MIGRATE SCHEMA
+
+```
+php artisan migrate
+```
+
+# TRY RUN LARAVEL PROJECT
+
+```
+php artisan serve
+```
+
 # INSTALL FILAMENT
 
 ```
